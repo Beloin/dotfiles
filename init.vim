@@ -1,7 +1,3 @@
-" Lembrar de instalar vim-plug (https://github.com/junegunn/vim-plug) para instalar os plugins
-" Adicionar arquivo em: ~/.config/nvim/
-" vim-bootstrap 2020-12-13 21:12:31
-
 "*****************************************************************************
 "" Vim-Plug core
 "*****************************************************************************
@@ -55,6 +51,9 @@ Plug 'severij/vadelma'
 Plug 'dracula/vim'
 Plug 'sbdchd/neoformat'
 Plug 'terryma/vim-multiple-cursors'
+Plug 'dart-lang/dart-vim-plugin'
+Plug 'natebosch/vim-lsc'
+Plug 'natebosch/vim-lsc-dart'
 
 if isdirectory('/usr/local/opt/fzf')
   Plug '/usr/local/opt/fzf' | Plug 'junegunn/fzf.vim'
@@ -79,6 +78,10 @@ Plug 'honza/vim-snippets'
 "*****************************************************************************
 "" Custom bundles
 "*****************************************************************************
+
+" Dart
+
+let g:lsc_auto_map = v:true
 
 " javascript
 "" Javascript Bundle
@@ -534,4 +537,3 @@ else
 endif
 
 " My Settings
-
