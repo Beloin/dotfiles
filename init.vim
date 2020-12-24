@@ -54,6 +54,12 @@ Plug 'terryma/vim-multiple-cursors'
 Plug 'dart-lang/dart-vim-plugin'
 Plug 'natebosch/vim-lsc'
 Plug 'natebosch/vim-lsc-dart'
+Plug 'APZelos/blamer.nvim'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+" post install (yarn install | npm install) then load plugin only for editing supported files
+Plug 'prettier/vim-prettier', {
+  \ 'do': 'yarn install',
+  \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'yaml', 'html'] }
 
 if isdirectory('/usr/local/opt/fzf')
   Plug '/usr/local/opt/fzf' | Plug 'junegunn/fzf.vim'
@@ -79,9 +85,6 @@ Plug 'honza/vim-snippets'
 "" Custom bundles
 "*****************************************************************************
 
-" Dart
-
-let g:lsc_auto_map = v:true
 
 " javascript
 "" Javascript Bundle
@@ -537,3 +540,16 @@ else
 endif
 
 " My Settings
+
+hi CocCursorRange guibg=#b16286 guifg=#ebdbb2
+
+nmap <expr> <silent> <C-d> <SID>select_current_word()
+function! s:select_current_word()
+  if !get(g:, 'coc_cursors_activated', 0)
+    return "\<Plug>(coc-cursors-word)"
+  endif
+  return "*\<Plug>(coc-cursors-word):nohlsearch\<CR>"
+endfunc
+
+" Dart
+let g:lsc_auto_map = v:true
