@@ -116,8 +116,8 @@ export PATH="$PATH:/home/beloin/Documents/flutter/bin"
 export PATH="$PATH:/home/beloin/node-v12.18.2-linux-x64/bin"
 export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/lib/dart/bin:/home/beloin/Documents/flutter/bin:/home/beloin/node-v12.18.2-linux-x64/bin:/usr/lib/dart/bin:/home/beloin/Documents/flutter/bin:/home/beloin/node-v12.18.2-linux-x64/bin:/home/beloin/.pub-cache/bin
 
-# Exports to path
 export PATH="$PATH:/home/beloin/apache-maven-3.6.3/bin/"
+
 export PATH="$PATH:/home/beloin/Android/Sdk/platform-tools"
 export PATH="$PATH:/home/beloin/bin"
 export PATH="$PATH:/home/beloin/.local/bin/"
