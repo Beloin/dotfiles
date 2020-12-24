@@ -9,7 +9,7 @@ fi
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/home/beloin/.oh-my-zsh"
+export ZSH="/home/sena/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -111,22 +111,40 @@ source $ZSH/oh-my-zsh.sh
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-export PATH="$PATH:/usr/lib/dart/bin"
-export PATH="$PATH:/home/beloin/Documents/flutter/bin"
-export PATH="$PATH:/home/beloin/node-v12.18.2-linux-x64/bin"
-export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/lib/dart/bin:/home/beloin/Documents/flutter/bin:/home/beloin/node-v12.18.2-linux-x64/bin:/usr/lib/dart/bin:/home/beloin/Documents/flutter/bin:/home/beloin/node-v12.18.2-linux-x64/bin:/home/beloin/.pub-cache/bin
 
-export PATH="$PATH:/home/beloin/apache-maven-3.6.3/bin/"
+# export PATH="$PATH:/usr/lib/dart/bin"
+# export PATH="$PATH:/home/sena/Documents/flutter/bin"
 
-export PATH="$PATH:/home/beloin/Android/Sdk/platform-tools"
-export PATH="$PATH:/home/beloin/bin"
-export PATH="$PATH:/home/beloin/.local/bin/"
-export PATH="$PATH:/root/.local/bin"
-export PATH="$PATH:/home/beloin/anaconda3/bin/"
-export PATH="$PATH:/home/beloin/android-studio/bin/" 
+# Node
+export PATH="$PATH:$HOME/node-v14.15.3-linux-x64/bin"
+
+# Anaconda
+export PATH="$PATH:$HOME/anaconda3/bin/"
+
+
+# export PATH="$PATH:/home/sena/apache-maven-3.6.3/bin/"
+# export PATH="$PATH:/home/beloin/Android/Sdk/platform-tools"
+# export PATH="$PATH:/home/beloin/bin"
+# export PATH="$PATH:/home/beloin/.local/bin/"
+# export PATH="$PATH:/root/.local/bin"
+# export PATH="$PATH:/home/beloin/android-studio/bin/" 
 
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 
-eval "$(/home/beloin/anaconda3/bin/conda shell.zsh hook)"
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/home/sena/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/home/sena/anaconda3/etc/profile.d/conda.sh" ]; then
+        . "/home/sena/anaconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/home/sena/anaconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
