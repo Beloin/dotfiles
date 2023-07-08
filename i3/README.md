@@ -1,6 +1,9 @@
 # I3 Configure files worth using
 
-## Dep:
+ - i3 config file is in: `~/.config/i3/config`
+ - i3status config is in: `~/.config/i3status/config`
+
+## Dependencies
 
 1. i3
 1. i3lock
