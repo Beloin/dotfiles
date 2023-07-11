@@ -14,3 +14,7 @@
 
 ### gnome-keyring-daemon
 This is used to work as a keywords store and secure to browsers (such as google chrome `google-chrome-stable --password-store=gnome`) and to add ssh keys.
+
+## TODO
+
+1. Seguir esse [tutorial](https://github.com/addy-dclxvi/i3-starterpack/tree/master).
