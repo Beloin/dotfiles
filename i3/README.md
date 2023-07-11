@@ -11,6 +11,7 @@
 1. gnome-keyring-daemon
 1. playerctl, pulseaudio and pactl (pacmd)
 1. [Dex](https://github.com/jceb/dex)
+1. Picom, for better XComposite 
 
 ### gnome-keyring-daemon
 This is used to work as a keywords store and secure to browsers (such as google chrome `google-chrome-stable --password-store=gnome`) and to add ssh keys.
