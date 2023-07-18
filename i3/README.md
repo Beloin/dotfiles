@@ -14,6 +14,11 @@
 1. Picom, for better XComposite
 1. GLX, `Picom` uses glx as backend
 
+## Applications
+
+1. Thunar
+    1. tumbler -> Package to create thumbnails
+
 ### gnome-keyring-daemon
 This is used to work as a keywords store and secure to browsers (such as google chrome `google-chrome-stable --password-store=gnome`) and to add ssh keys.
 
