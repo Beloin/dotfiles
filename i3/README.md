@@ -18,6 +18,7 @@
 
 1. Thunar
     1. tumbler -> Package to create thumbnails
+    2. gvfs -> External devices and Trash
 
 ### gnome-keyring-daemon
 This is used to work as a keywords store and secure to browsers (such as google chrome `google-chrome-stable --password-store=gnome`) and to add ssh keys.
