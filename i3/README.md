@@ -8,7 +8,7 @@
 1. i3
 1. i3lock
 1. i3status-manjaro | i3status
-1. gnome-keyring-daemon
+1. gnome-keyring-daemon, or kwallet5 (In case using KDE's stuff)
 1. playerctl, pulseaudio and pactl (pacmd)
 1. [Dex](https://github.com/jceb/dex)
 1. Picom, for better XComposite
@@ -21,7 +21,7 @@
     2. gvfs -> External devices and Trash
 
 ### gnome-keyring-daemon
-This is used to work as a keywords store and secure to browsers (such as google chrome `google-chrome-stable --password-store=gnome`) and to add ssh keys.
+This is used to work as a keywords store and secure to browsers (such as google chrome `google-chrome-stable --password-store=gnome` or `google-chrome-stable --password-store=kwallet5`) and to add ssh keys.
 
 ## TODO
 
