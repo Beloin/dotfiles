@@ -13,6 +13,8 @@
 1. [Dex](https://github.com/jceb/dex)
 1. Picom, for better XComposite
 1. GLX, `Picom` uses glx as backend
+1. dmenu, menu that uses .desktop files
+1. rofi, a window swicher and drun menu
 
 ## Applications
 
