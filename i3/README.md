@@ -15,6 +15,7 @@
 1. GLX, `Picom` uses glx as backend
 1. dmenu, menu that uses .desktop files
 1. rofi, a window swicher and drun menu
+1. [i3bocks](https://github.com/vivien/i3blocks)
 
 ## Applications
 
