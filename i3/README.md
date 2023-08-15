@@ -1,13 +1,14 @@
 # I3 Configure files worth using
 
  - i3 config file is in: `~/.config/i3/config`
+ - i3blocks config is in: `~/.config/i3blocks/config`
  - i3status config is in: `~/.config/i3status/config`
 
 ## Dependencies
 
 1. i3
 1. i3lock
-1. i3status-manjaro | i3status
+1. i3status-manjaro | i3status | [i3bocks](https://github.com/vivien/i3blocks)
 1. gnome-keyring-daemon, or kwallet5 (In case using KDE's stuff)
 1. playerctl, pulseaudio and pactl (pacmd)
 1. [Dex](https://github.com/jceb/dex)
@@ -15,7 +16,13 @@
 1. GLX, `Picom` uses glx as backend
 1. dmenu, menu that uses .desktop files
 1. rofi, a window swicher and drun menu
-1. [i3bocks](https://github.com/vivien/i3blocks)
+
+## For i3blocks (As sub to i3status)
+
+Set $SCRIPT_DIR on .profile | .bashrc | .zshrc to where all the scripts will be installed... (Usually `export $SCRIPT_DIR=$HOME/.config/i3blocks/scripts`).
+
+1. sysstat
+2. perl
 
 ## Applications
 
