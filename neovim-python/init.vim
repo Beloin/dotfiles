@@ -53,6 +53,7 @@ Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
 " Plug 'wesQ3/wonbat.vim'
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 let g:deoplete#enable_at_startup = 1
+Plug 'tmhedberg/SimpylFold'
 
 " coc
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
@@ -268,7 +269,7 @@ let g:NERDTreeShowBookmarks=1
 let g:nerdtree_tabs_focus_on_files=1
 let g:NERDTreeMapOpenInTabSilent = '<RightMouse>'
 let g:NERDTreeWinSize = 50
-set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.pyc,*.db,*.sqlite,*node_modules
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.pyc,*.db,*.sqlite,*node_modules/
 nnoremap <silent> <F2> :NERDTreeFind<CR>
 nnoremap <silent> <F3> :NERDTreeToggle<CR>
 
@@ -727,8 +728,3 @@ vnoremap <A-k> :m '<-2<CR>gv=gv
 inoremap <C-j> <Esc>:FloatermToggle <CR>
 nnoremap <C-j> :FloatermToggle <CR>
 tnoremap <C-j> <C-\><C-n>:FloatermToggle <CR>
-
-
-
-
-
