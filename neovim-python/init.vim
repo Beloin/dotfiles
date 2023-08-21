@@ -106,6 +106,7 @@ Plug 'carlosgaldino/elixir-snippets'
 " python
 "" Python Bundle
 Plug 'davidhalter/jedi-vim'
+Plug 'pappasam/coc-jedi', { 'do': 'yarn install --frozen-lockfile && yarn build', 'branch': 'main' }
 Plug 'raimon49/requirements.txt.vim', {'for': 'requirements'}
 Plug 'zchee/deoplete-jedi'
 " Plug 'sbdchd/neoformat'
@@ -728,3 +729,4 @@ vnoremap <A-k> :m '<-2<CR>gv=gv
 inoremap <C-j> <Esc>:FloatermToggle <CR>
 nnoremap <C-j> :FloatermToggle <CR>
 tnoremap <C-j> <C-\><C-n>:FloatermToggle <CR>
+
