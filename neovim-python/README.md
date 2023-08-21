@@ -1,6 +1,7 @@
 # Dependencies
 
-Ps: Those dependencies with "coc-*" must be installed using command `CocInstall`.
+Those dependencies with "coc-*" must be installed using command `CocInstall`.
+Should update `coc-settings.json` with the one in this dir.
 
 1. ~coc-python~ replaced for coc-jedi
 2. coc-jedi
