@@ -730,3 +730,5 @@ inoremap <C-j> <Esc>:FloatermToggle <CR>
 nnoremap <C-j> :FloatermToggle <CR>
 tnoremap <C-j> <C-\><C-n>:FloatermToggle <CR>
 
+" Format code
+inoremap <C-l> <C-o>:Format<CR>
