@@ -53,7 +53,6 @@ Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
 " Plug 'wesQ3/wonbat.vim'
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 let g:deoplete#enable_at_startup = 1
-Plug 'tmhedberg/SimpylFold'
 
 " coc
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
