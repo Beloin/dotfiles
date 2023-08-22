@@ -60,6 +60,9 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 " Floating Terminal
 Plug 'voldikss/vim-floaterm'
 
+" Themes
+Plug 'rebelot/kanagawa.nvim'
+
 " Plantuml
 Plug 'tyru/open-browser.vim'
 Plug 'aklt/plantuml-syntax'
@@ -177,7 +180,7 @@ set number
 
 let no_buffers_menu=1
 " colorscheme wombat
-colorscheme tokyonight
+colorscheme kanagawa
 
 " Better command line completion 
 set wildmenu
@@ -716,7 +719,6 @@ let g:cmake_link_compile_commands = 1
 set shell=zsh
 
 " Move Lines Up or Down
-
 nnoremap <A-j> :m .+1<CR>==
 nnoremap <A-k> :m .-2<CR>==
 inoremap <A-j> <Esc>:m .+1<CR>==gi
