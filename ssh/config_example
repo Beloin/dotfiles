@@ -1,0 +1,14 @@
+Host ssh.dev.azure.com
+  HostName ssh.dev.azure.com
+  User git
+  AddKeysToAgent yes
+  IdentityFile /home/beloin/.ssh/private_key_name
+
+Host github.com
+  HostName github.com
+  User git
+  AddKeysToAgent yes
+  IdentityFile /home/beloin/.ssh/private_key_name
+
+Host *
+  IdentitiesOnly yes
