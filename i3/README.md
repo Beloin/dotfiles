@@ -11,7 +11,8 @@
 1. i3status-manjaro | i3status | [i3bocks](https://github.com/vivien/i3blocks)
 1. gnome-keyring-daemon, or kwallet5 (In case using KDE's stuff)
 1. playerctl, pulseaudio and pactl (pacmd)
-2. `maim` as PrintScreen
+2. `nitrogen` wallpaper manager
+3. `maim` as PrintScreen
 1. [Dex](https://github.com/jceb/dex)
 1. Picom, for better XComposite
   1. GLX, `Picom` uses glx as backend
