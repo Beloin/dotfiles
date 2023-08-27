@@ -16,6 +16,7 @@
 1. GLX, `Picom` uses glx as backend
 1. dmenu, menu that uses .desktop files
 1. rofi, a window swicher and drun menu
+2. `xdotool` automation tool for mouse operations
 
 ## For i3blocks (As sub to i3status)
 
