@@ -16,3 +16,8 @@ Should update `coc-settings.json` with the one in this dir.
     - debugpy
     - pynvim
     - pylint
+
+
+## TODO:
+
+1. Criar um script com a instalacao e setup automatico
