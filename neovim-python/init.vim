@@ -53,6 +53,9 @@ Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
 " Plug 'wesQ3/wonbat.vim'
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 let g:deoplete#enable_at_startup = 1
+Plug 'mfussenegger/nvim-dap'
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+
 
 " coc
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
@@ -111,6 +114,7 @@ Plug 'davidhalter/jedi-vim'
 Plug 'pappasam/coc-jedi', { 'do': 'yarn install --frozen-lockfile && yarn build', 'branch': 'main' }
 Plug 'raimon49/requirements.txt.vim', {'for': 'requirements'}
 Plug 'zchee/deoplete-jedi'
+Plug 'mfussenegger/nvim-dap-python'
 " Plug 'sbdchd/neoformat'
 
 "*****************************************************************************
@@ -733,3 +737,11 @@ tnoremap <C-j> <C-\><C-n>:FloatermToggle <CR>
 
 " Format code
 inoremap <C-l> <C-o>:Format<CR>
+
+" Debug Code
+nnoremap <C-A-B> :lua require'dap'.toggle_breakpoint()<CR>
+nnoremap <F9> :lua require'dap'.continue()<CR>
+nnoremap <F8> :lua require'dap'.step_over()<CR>
+nnoremap <F7> :lua require'dap'.step_into()<CR>
+nnoremap <S-F7> :lua require'dap'.step_out()<CR>
+
