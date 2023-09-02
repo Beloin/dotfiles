@@ -9,7 +9,8 @@ Should update `coc-settings.json` with the one in this dir.
 4. coc-json
 5. [nvim-dap](https://github.com/mfussenegger/nvim-dap)
 6. [nvim-dap-python](https://github.com/mfussenegger/nvim-dap-python)
-7. nvim-treesitter
+    - Requires this setup: `:lua require('dap-python').setup('~/.virtualenvs/debugpy/bin/python')`
+8. nvim-treesitter
 1. requiriments (For python install):
     - yapf
     - jedi
@@ -17,6 +18,7 @@ Should update `coc-settings.json` with the one in this dir.
     - pynvim
     - pylint
 
+PS: All python lib can and could be installed on a global venv
 
 ## TODO:
 
