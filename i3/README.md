@@ -27,6 +27,19 @@ Set $SCRIPT_DIR on .profile | .bashrc | .zshrc to where all the scripts will be 
 1. sysstat
 2. perl
 
+## For better interface:
+
+Instruction from [here](https://www.reddit.com/r/i3wm/comments/7cicm0/what_do_i_need_to_do_exactly_to_make_i3_look_good/).
+
+1. `lxappearance` and `arc-theme`
+2. `i3-themes` to fast help this
+
+## When using [i3-themes](https://github.com/Kthulu120/i3wm-themes)
+
+### Deps:
+
+1. [Polybar](https://github.com/polybar/polybar)
+
 ## Applications
 
 1. Thunar
