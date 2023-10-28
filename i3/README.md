@@ -7,7 +7,7 @@
 ## Dependencies
 
 1. i3
-1. i3lock
+1. i3lock | i3lock-fancy-multimonitor
 1. i3status-manjaro | i3status | [i3bocks](https://github.com/vivien/i3blocks)
 1. gnome-keyring-daemon, or kwallet5 (In case using KDE's stuff)
 1. playerctl, pulseaudio and pactl (pacmd)
