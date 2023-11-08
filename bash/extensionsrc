@@ -1,0 +1,12 @@
+# Import on your main *rc file
+
+# Aliases
+alias gpp="git pull --rebase"
+alias dstop="docker container ls -q | xargs -I {} docker stop {}"
+
+# Functions
+# alias list="ls -lht"
+function list () {
+    if [ -z "$1" ]; then num=10; fi;
+    ls -lht | head -n $num
+}
