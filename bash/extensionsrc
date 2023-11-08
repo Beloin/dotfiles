@@ -10,3 +10,9 @@ function list () {
     if [ -z "$1" ]; then num=10; fi;
     ls -lht | head -n $num
 }
+
+# Copy pipe to clipboard
+function copy () {
+    read var
+    xclip -sel clip <<< $var
+}
