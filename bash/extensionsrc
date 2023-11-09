@@ -3,6 +3,7 @@
 # Aliases
 alias gpp="git pull --rebase"
 alias dstop="docker container ls -q | xargs -I {} docker stop {}"
+alias xilip="xclip -sel clip"
 
 # Functions
 # alias list="ls -lht"
