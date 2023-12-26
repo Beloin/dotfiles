@@ -1,0 +1,100 @@
+separator_block_width=7
+
+[cpu_usage]
+command=scripts/cpu_usage
+interval=5
+LABEL=CPU 
+min_width=CPU: 100.00%
+T_WARN=50
+T_CRIT=80
+DECIMALS=2
+COLOR_NORMAL=#EBDBB2
+COLOR_WARN=#FFFC00
+COLOR_CRIT=#FF0000
+
+[disk]
+command=scripts/disk
+LABEL= 
+#DIR=$HOME
+#ALERT_LOW=10
+interval=30
+
+[memory2]
+command=scripts/memory2
+label= 
+interval=persist
+markup=pango
+bar_chars=_▁▂▃▄▅▆▇█
+bar_size=20
+critical=80
+warning=50
+color_critical=#d9534f
+
+[volume-pulseaudio]
+command=scripts/volume-pulseaudio
+interval=once
+signal=1
+markup=pango
+#MIXER=[determined automatically]
+#SCONTROL=[determined automatically]
+##exposed format variables: ${SYMB}, ${VOL}, ${INDEX}, ${NAME}
+#LONG_FORMAT="${SYMB} ${VOL}% [${INDEX}:${NAME}]"
+SHORT_FORMAT="${SYMB} ${VOL}% [${INDEX}]"
+#AUDIO_HIGH_SYMBOL='  '
+#AUDIO_MED_THRESH=50
+#AUDIO_MED_SYMBOL='  '
+#AUDIO_LOW_THRESH=0
+#AUDIO_LOW_SYMBOL='  '
+#AUDIO_DELTA=5
+#DEFAULT_COLOR="#ffffff"
+#MUTED_COLOR="#a0a0a0"
+#USE_ALSA_NAME=0
+#USE_DESCRIPTION=0
+## SUBSCRIBE=1 requires interval=persist and always uses LONG_FORMAT
+#SUBSCRIBE=0
+
+[ip]
+command=ifconfig | grep enp -A1 | awk 'FNR == 2 {print $2}'
+# command=hostname -i | awk '{ print "IP:" $1 }'
+interval=once
+color=#91E78B
+
+[bandwidth]
+command=scripts/bandwidth2 
+interval=persist
+markup=pango
+LABEL=
+WARN_RX=307200
+WARN_TX=30720
+CRIT_RX=512000
+CRIT_TX=51200
+
+[rofi-calendar]
+command=scripts/rofi-calendar
+interval=3600
+#BAR_POSITION=bottom
+#WEEK_START=monday
+#DATEFTM=+%a %d %b %Y
+#SHORTFMT=+%d/%m/%Y
+#LABEL= 
+#FONT=Monospace 10
+#LEFTCLICK_PREV_MONTH=false
+#PREV_MONTH_TEXT=« previous month «
+#NEXT_MONTH_TEXT=» next month »
+#ROFI_CONFIG_FILE=/dev/null
+
+# [systemctl]
+# command=scripts/systemctl
+# interval=once
+# markup=pango
+# instance=docker
+
+[time]
+command=scripts/time
+interval=1
+#TZ_FILE=~/.tz
+#STRFTIME_FORMAT=%Y-%m-%d %H:%M
+STRFTIME_FORMAT=%Y-%m-%d %H:%M
+TZONES=$DEFAULT_TZ,Brazil/East,Australia/Brisbane,Asia/Calcutta
+TZ_LABELS=,Brazil
+
