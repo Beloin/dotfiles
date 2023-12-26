@@ -26,6 +26,8 @@ Set $SCRIPT_DIR on .profile | .bashrc | .zshrc to where all the scripts will be 
 
 1. sysstat
 2. perl
+3. yad
+4. pactl
 
 ## For better interface:
 
