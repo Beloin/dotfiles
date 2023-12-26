@@ -22,8 +22,13 @@
 
 ## For i3blocks (As sub to i3status)
 
-Set $SCRIPT_DIR on .profile | .bashrc | .zshrc to where all the scripts will be installed... (Usually `export $SCRIPT_DIR=$HOME/.config/i3blocks/scripts`).
+1. Set $SCRIPT_DIR on .profile | .bashrc | .zshrc to where all the scripts will be installed... (Usually `export $SCRIPT_DIR=$HOME/.config/i3blocks/scripts`).
+2. Set `for_window [class="Yad"] floating enable`
+3. Set `set $refresh_i3status pkill -RTMIN+1 i3blocks` to replace: `set $refresh_i3status killall -SIGUSR1 i3status`
+4. Set `status_command i3blocks`
 
+
+### Dependencies
 1. sysstat
 2. perl
 3. yad
