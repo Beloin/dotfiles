@@ -11,7 +11,7 @@ alias xilip="xclip -sel clip"
 # alias list="ls -lht"
 function list () {
     if [ -z "$1" ]; then num=10; fi;
-    ls -lht | head -n $num
+    ls -lht --color=tty | head -n $num
 }
 
 # Copy pipe to clipboard
