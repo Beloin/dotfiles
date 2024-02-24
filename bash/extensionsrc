@@ -19,3 +19,10 @@ function copy () {
     read var
     xclip -sel clip <<< $var
 }
+
+# Run program from terminal without output and asynchronously
+function async_run() {
+    if [ -z "$1" ]; then echo "Not given any arguments" 1>&2; return 1; fi;
+    echo "Running: $@";
+    nohup $@ > /dev/null 2>&1 &;
+}
