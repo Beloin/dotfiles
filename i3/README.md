@@ -60,3 +60,5 @@ This is used to work as a keywords store and secure to browsers (such as google 
 
 1. Seguir esse [tutorial](https://github.com/addy-dclxvi/i3-starterpack/tree/master).
 2. [Salvar Layout](https://i3wm.org/docs/layout-saving.html)
+3. Add I3Gaps
+4. Add polybar instead of i3blocks
