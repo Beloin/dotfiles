@@ -26,3 +26,7 @@ function async_run() {
     echo "Running: $@";
     nohup $@ > /dev/null 2>&1 &;
 }
+
+function this_branch () {
+    git branch | grep \* | awk '{print $2}'
+}
