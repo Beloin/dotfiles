@@ -1,0 +1,3 @@
+[submodule "NVChad-Fork"]
+	path = NVChad-Fork
+	url = git@github.com:Beloin/NVChad-Fork.git
