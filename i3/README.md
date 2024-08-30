@@ -10,6 +10,7 @@
 1. i3lock | i3lock-fancy-multimonitor
 1. i3status-manjaro | i3status | [i3bocks](https://github.com/vivien/i3blocks)
 1. gnome-keyring-daemon, or kwallet5 (In case using KDE's stuff)
+2. `lxpolkit` to start security agent
 1. playerctl, pulseaudio and pactl (pacmd)
 2. `nitrogen` wallpaper manager
 3. `maim` as PrintScreen
@@ -56,9 +57,14 @@ Instruction from [here](https://www.reddit.com/r/i3wm/comments/7cicm0/what_do_i_
 ### gnome-keyring-daemon
 This is used to work as a keywords store and secure to browsers (such as google chrome `google-chrome-stable --password-store=gnome` or `google-chrome-stable --password-store=kwallet5`) and to add ssh keys.
 
+### Or Lxpookit
+
+- Download `sudo apt install lxpokit`
+- Add it to i3config `exec --no-startup-id lxpolkit`
+
 ## TODO
 
 1. Seguir esse [tutorial](https://github.com/addy-dclxvi/i3-starterpack/tree/master).
 2. [Salvar Layout](https://i3wm.org/docs/layout-saving.html)
 3. Add I3Gaps
-4. Add polybar instead of i3blocks
+4. ~Add polybar instead of i3blocks~ (i3 blocks is better
