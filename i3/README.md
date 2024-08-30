@@ -35,6 +35,10 @@
 3. yad
 4. pactl
 
+## Bluetooth
+
+1. `sudo apt install blueman bluez`
+
 ## For better interface:
 
 Instruction from [here](https://www.reddit.com/r/i3wm/comments/7cicm0/what_do_i_need_to_do_exactly_to_make_i3_look_good/).
