@@ -4,7 +4,7 @@ Here i store the continuos and big chunks of configuration files for linux envir
 
 # Nvim
 
-~Since 03/2024 my main Nvim activity is in the NvimChad clone. I use that repo as the main source of nvim configurations.~
+~Since 03/2024 my main Nvim activity is in the NvimChad clone. I use that repo as the main source of nvim configurations.~  
 Since 04/2024 my main Nvim activity is in the LazyVim clone. I use that repo as the main source of nvim configurations.
 
 # i3
