@@ -43,3 +43,8 @@ function async_await() {
 function this_branch () {
     git branch | grep \* | awk '{print $2}'
 }
+
+function shwsize ()
+{
+    du -h -d1  . | sort -hr
+}
