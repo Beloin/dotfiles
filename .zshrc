@@ -112,16 +112,10 @@ source $ZSH/oh-my-zsh.sh
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-# export PATH="$PATH:/usr/lib/dart/bin"
-# export PATH="$PATH:/home/sena/Documents/flutter/bin"
+# Includes own custom shell functions
+[[ -f ~/extensionsrc.sh ]] && source ~/extensionsrc.sh
 
-# Node
-export PATH="$PATH:$HOME/node-v14.15.3-linux-x64/bin"
-
-# Anaconda
-export PATH="$PATH:$HOME/anaconda3/bin/"
-
-
+# Include here all import PATHS
 # export PATH="$PATH:/home/sena/apache-maven-3.6.3/bin/"
 # export PATH="$PATH:/home/beloin/Android/Sdk/platform-tools"
 # export PATH="$PATH:/home/beloin/bin"
@@ -130,21 +124,6 @@ export PATH="$PATH:$HOME/anaconda3/bin/"
 # export PATH="$PATH:/home/beloin/android-studio/bin/" 
 
 
+
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-
-
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/home/sena/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "/home/sena/anaconda3/etc/profile.d/conda.sh" ]; then
-        . "/home/sena/anaconda3/etc/profile.d/conda.sh"
-    else
-        export PATH="/home/sena/anaconda3/bin:$PATH"
-    fi
-fi
-unset __conda_setup
-# <<< conda initialize <<<

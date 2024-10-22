@@ -1,3 +1,6 @@
 [submodule "NVChad-Fork"]
 	path = NVChad-Fork
 	url = git@github.com:Beloin/NVChad-Fork.git
+[submodule "LazyvimFork"]
+	path = LazyvimFork
+	url = git@github.com:Beloin/LazyvimFork.git
