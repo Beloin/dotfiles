@@ -2,14 +2,16 @@
 
 1. tmux
 2. nnn
-  - Plugins in /nnn/*
-  - With image preview 
 
 ------------
 # NNN
+
+- Plugins in /nnn/*
 
 ## Preview plugin
 ```sh
 export NNN_FIFO=/tmp/nnn.fifo;
 export NNN_PLUG='P:preview-tui';
 ```
+
+Copy preview-tui to `~/.config/nnn/plugins/`
