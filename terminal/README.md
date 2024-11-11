@@ -8,6 +8,19 @@
 
 - Using [Tmux sensible](https://github.com/tmux-plugins/tmux-sensible)
 
+## Default settings
+
+In ~/.config/tmux/tmux.conf:
+
+```sh
+set -s escape-time 0
+```
+
+Then run:
+```sh
+tmux source-file ~/.config/tmux/tmux.conf
+```
+
 # NNN
 
 - Plugins in /nnn/*
