@@ -4,6 +4,10 @@
 2. nnn
 
 ------------
+# Tmux
+
+- Using [Tmux sensible](https://github.com/tmux-plugins/tmux-sensible)
+
 # NNN
 
 - Plugins in /nnn/*
