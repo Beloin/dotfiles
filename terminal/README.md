@@ -32,6 +32,9 @@ bind l select-pane -R
 
 # Mouse
 setw -g mouse on
+
+# Kill pane
+bind q killp
 ```
 
 Then run:
